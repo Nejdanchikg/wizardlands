@@ -1,2 +1,0 @@
-# wizardlands.github.io
-🔸WizardLands🔹
