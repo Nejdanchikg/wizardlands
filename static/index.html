@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>💎WizardLands</title>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <meta charset="utf-8">
+  <link rel="SHORTCUT ICON" href="static/img/favicon.ico" type="image/x-icon">
+  <meta name="application-name" content="WizardLands">
+  <meta name="description" content="Художествинные произведения Marsel-Shelfa">
+  <meta name="keywords" content="WizardLands,WizardStory">
+  <meta name="author" content="MarselShelfa">
+  <meta property="og:locale" content="be_BY">
+  <meta property="og:site_name" content="">
+  <meta property="og:image" content="static/img/iconBlack.png">
+  <meta property="og:description" content="Художествинные произведения Marsel-Shelfa">
+  <meta property="og:title" content="WizardLands">
+
+
+</head>
+
+<body style="margin: 0">
+  <div class="bg">
+    <header id="header">
+      <strong class="logo" style="display: inherit;">
+        <img src="static/img/icon.png">
+        <h2>WizardLands</h2>
+      </strong>
+      <nav class="DinamicMenu">
+        <a href="index.html">🎩Главная</a>
+        <a href="info.html">❓Faq</a>
+        <a href="works.html" class="menu-item">📚Произведения</a>
+      </nav>
+      <div class="MenuButton">
+        <a class="menuIconbox" id="menuIconbox" href="#" style="position: absolute;">
+          <img src="static/img/menuIcon.png">
+        </a>
+        <a class="menuIconbox HideBox" id="menuIconboxClose" href="#">
+          <img src="static/img/close.png">
+        </a>
+      </div>
+
+    </header>
+    <div class="MainContent">
+      <div class="DimastrImg">
+        <img src="static/img/IstoryaWizarta345.png">
+      </div>
+      <div class="LogoText">
+        <h1 class="DeskMode">Wizard <br>Lands</h1>
+        <h1 class="mbMode">WizardLands</h1>
+        <div class="BoxText">
+          <h3>Художествинные произведения от Marsel Shelfa</h3>
+          <a href="works.html" class="button"> 📚Перейти к произведениям</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg2">
+    <div class="MainContent2" style="padding-top: 30px;">
+      <div class="Mediablock HideMeEesy">
+        <div class="MediaImg">
+          <img class="img" src="static/img/icons.png">
+        </div>
+        <div class="MediaText">
+          <h2>Что вообще представляет из себя этот сайт</h2>
+          <p>Официальный сайт Wizard Team, посвящённый художественным произведениям Марселя Шельфа и его сообщества.
+            Цель данного сайта - популяризация любительской литературы на большую публику.
+          </p>
+        </div>
+      </div>
+      <div class="Mediablock HideMeEesy">
+        <div class="MediaImg">
+          <img class="img" src="static/img/info1.png">
+        </div>
+        <div class="MediaText">
+          <h2>Кто принимает участвие в создании произведений?</h2>
+          <p>На данный момент произведения создают:</p>
+          <h4>Автор - Marsel Shelfa</h4>
+          <h4>Главный редактор - Alex Xela'Bee</h4>
+          <h4>Отдельная благодарность - Hiro Certix и SStalker9271</h4>
+        </div>
+      </div>
+
+      <div class="Mediablock HideMeEesy">
+        <div class="MediaImg">
+          <img class="img" src="static/img/nhmm1.png">
+        </div>
+        <div class="MediaText">
+          <h2>Кем был создан сайт?</h2>
+          <p>Сайт был разработан пользователем <strong>Nejdanchik</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="bg2">
+    <footer id="footer">
+      <nav>
+        <a href="https://discord.gg/Te7837f2QU">Discord сервер <strong>WizardLands</strong></a>
+        <a href="https://discord.gg/VW6ekcSByU">Discord создателя сайта</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="static/img/toster.png"></a>
+      </nav>
+    </footer>
+  </div>
+  <script src="static/js/wizart.js"></script>
+  <script src="static/js/scripts.js"></script>
+  <script src="static/js/snow.js"></script>
+  <script src="static/js/menuwork.js"></script>
+  <script>
+
+    $(function () {
+      let link = $('#menuIconbox');
+      let close = $('#menuIconboxClose');
+      let menu = $('.DinamicMenu');
+
+      link.on('click', function (event) {
+        event.preventDefault();
+        menu.toggleClass('openedMenu');
+        close.toggleClass('HideBox');
+        link.toggleClass('HideBox');
+      });
+      close.on('click', function (event) {
+        event.preventDefault();
+        menu.toggleClass('openedMenu');
+        close.toggleClass('HideBox');
+        link.toggleClass('HideBox');
+
+      });
+      let link2 = $('#DownloadButton');
+      let close2 = $('#CloseDownloadButton');
+      let menuD = $('#DinMenuDownload');
+      let menuM = $('#DinMenuDownloadMb');
+
+      link2.on('click', function (event) {
+        console.log("firk")
+        event.preventDefault();
+        menuD.toggleClass('MenuDownload');
+        menuM.toggleClass('MenuDownloadM');
+      });
+      close2.on('click', function (event) {
+        event.preventDefault();
+        menuD.toggleClass('MenuDownload');
+        menuM.toggleClass('MenuDownloadM');
+
+      });
+    });
+
+    function newMyWindow(e) {
+      var h = 700,
+        w = 450;
+      window.open(e, '', 'scrollbars=1,height=' + Math.min(h, screen.availHeight) + ',width=' + Math.min(w, screen.availWidth) + ',left=' + Math.max(0, (screen.availWidth - w) / 2) + ',top=' + Math.max(0, (screen.availHeight - h) / 2));
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>

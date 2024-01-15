@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>📚WizardLandsWorks</title>
+  <link rel="stylesheet" type="text/css" href="static/css/stylewisteria.css">
+
+<body style="margin: 0">
+
+  <body link="white" vlink="#cecece" alink="#ff0000" bgcolor="black">
+    <div class="bg">
+      <header id="header">
+        <strong class="logo" style="display: inherit;">
+          <img src="static/img/icon.png">
+          <h2>WizardLands</h2>
+        </strong>
+        <nav class="DinamicMenu">
+          <a href="index.html">🎩Главная</a>
+          <a href="info.html">❓Faq</a>
+          <a href="works.html">📚Произведения</a>
+        </nav>
+        <div class="MenuButton">
+          <a class="menuIconbox" id="menuIconbox" href="#" style="position: absolute;">
+            <img src="static/img/menuIcon.png">
+          </a>
+          <a class="menuIconbox HideBox" id="menuIconboxClose" href="#">
+            <img src="static/img/close.png">
+          </a>
+        </div>
+      </header>
+      <div class="MainContent">
+        <div class="InfoBox">
+          <script src="static/js/skghg.js"></script>
+          <div class="scroll-content">
+            <center><img src="static/img/wisteria.png"></center>
+            <center>
+              <h2>🌺Tale of Wisteria
+                <img id="imageToClick" src="static/img/Stalker.gif" alt="Победитель викторины 2023"
+                  title="Победитель викторины на годовщину амулетов 2023 Stalker9271">
+              </h2>
+              <audio id="audioPlayer" src="static/img/nevergonnagiveyouup.mp3"></audio>
+              <script src="static/js/script.js"></script>
+            </center>
+            <center>
+              <a href="infowisteria.html" id="DownloadButton" class="button2">Информация</a>
+              <a href="works.html" id="DownloadButton" class="button2">Главы</a>
+              <h2><a href="wischapter1.html" id="DownloadButton" class="button">Скора....</a></h2>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="bg2">
+      <footer id="footer">
+        <nav>
+          <a href="https://discord.gg/Te7837f2QU">Discord сервер <strong>WizardLands</strong></a>
+          <a href="https://discord.gg/VW6ekcSByU">Discord создателя сайта</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="static/img/toster.png"></a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+  <script src="static/js/wizart.js"></script>
+  <script src="static/js/snow.js"></script>
+  <script>
+    $(function () {
+      let link = $('#menuIconbox');
+      let close = $('#menuIconboxClose');
+      let menu = $('.DinamicMenu');
+
+      link.on('click', function (event) {
+        event.preventDefault();
+        menu.toggleClass('openedMenu');
+        close.toggleClass('HideBox');
+        link.toggleClass('HideBox');
+      });
+      close.on('click', function (event) {
+        event.preventDefault();
+        menu.toggleClass('openedMenu');
+        close.toggleClass('HideBox');
+        link.toggleClass('HideBox');
+
+      });
+    });
+  </script>
+</body>
+
+</html>

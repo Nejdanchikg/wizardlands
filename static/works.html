@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>📚WizardLandsWorks</title>
+  <link rel="stylesheet" type="text/css" href="static/css/stylework.css">
+
+<body style="margin: 0">
+
+  <body link="white" vlink="#cecece" alink="#ff0000" bgcolor="black">
+    <div class="bg">
+      <header id="header">
+        <strong class="logo" style="display: inherit;">
+          <img src="static/img/icon.png">
+          <h2>WizardLands</h2>
+        </strong>
+        <nav class="DinamicMenu">
+          <a href="index.html">🎩Главная</a>
+          <a href="info.html">❓Faq</a>
+          <a href="works.html">📚Произведения</a>
+        </nav>
+        <div class="MenuButton">
+          <a class="menuIconbox" id="menuIconbox" href="#" style="position: absolute;">
+            <img src="static/img/menuIcon.png">
+          </a>
+          <a class="menuIconbox HideBox" id="menuIconboxClose" href="#">
+            <img src="static/img/close.png">
+          </a>
+        </div>
+      </header>
+      <div class="MainContent">
+        <div class="InfoBox">
+          <script src="static/js/skghg.js"></script>
+          <div class="scroll-content">
+            <center><img src="static/img/workikon.png"></center>
+            <center>
+              <h2>🍀Eric's Amulet Secret
+                <img id="imageToClick" src="static/img/Stalker.gif" alt="Победитель викторины 2023"
+                  title="Победитель викторины на годовщину амулетов 2023 Stalker9271">
+              </h2>
+              <audio id="audioPlayer" src="static/img/nevergonnagiveyouup.mp3"></audio>
+              <script src="static/js/script.js"></script>
+            </center>
+            <a href="infowork.html" id="DownloadButton" class="button2">Информация</a>
+            <a href="works.html" id="DownloadButton" class="button2">Главы</a>
+            <a href="kom.html" id="DownloadButton" class="button2">Комментарии</a>
+            <h2><a href="eas/easchapter1.html" id="DownloadButton" class="button">Глава 1: Изобретатель и амулет</a>
+            </h2>
+            <h2><a href="eas/easchapter1.5.html" id="DownloadButton" class="button">Экстра 1.5: Деловые гости</a></h2>
+            <h2><a href="eas/easchapter2.html" id="DownloadButton" class="button">Глава 2: Дядя автомеханик</a></h2>
+            <h2><a href="eas/easchapter3.html" id="DownloadButton" class="button">Глава 3: Случай в парке</a></h2>
+            <h2><a href="eas/easextra3.5.html" id="DownloadButton" class="button">Экстра 3.5: Время обыска</a></h2>
+            <h2><a href="eas/easchapter4.html" id="DownloadButton" class="button">Глава 4: Погоня</a></h2>
+            <h2><a href="eas/easchapter5.html" id="DownloadButton" class="button">Глава 5: Пусть говорят</a></h2>
+            <h2><a href="eas/easchapter6.html" id="DownloadButton" class="button">Глава 6: Первая миссия</a></h2>
+            <h2><a href="eas/easextra6.5.html" id="DownloadButton" class="button">Экстра-глава 6.5:
+                Серьёзнаяпроблема</a></h2>
+            <h2><a href="eas/easchapter7.html" id="DownloadButton" class="button">Глава 7: Задание</a></h2>
+            <h2><a href="tof/towchapter1.html" id="DownloadButton" class="button">ТЕст</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="bg2">
+      <footer id="footer">
+        <nav>
+          <a href="https://discord.gg/Te7837f2QU">Discord сервер <strong>WizardLands</strong></a>
+          <a href="https://discord.gg/VW6ekcSByU">Discord создателя сайта</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="static/img/toster.png"></a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+  <script src="static/js/wizart.js"></script>
+  <script src="static/js/snow.js"></script>
+  <script>
+    $(function () {
+      let link = $('#menuIconbox');
+      let close = $('#menuIconboxClose');
+      let menu = $('.DinamicMenu');
+
+      link.on('click', function (event) {
+        event.preventDefault();
+        menu.toggleClass('openedMenu');
+        close.toggleClass('HideBox');
+        link.toggleClass('HideBox');
+      });
+      close.on('click', function (event) {
+        event.preventDefault();
+        menu.toggleClass('openedMenu');
+        close.toggleClass('HideBox');
+        link.toggleClass('HideBox');
+
+      });
+    });
+  </script>
+</body>
+
+</html>
