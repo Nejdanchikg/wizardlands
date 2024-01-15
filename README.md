@@ -1,2 +1,2 @@
-# wizardlands
+# wizardlands.github.io
 🔸WizardLands🔹
